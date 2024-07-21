@@ -1,6 +1,5 @@
-
 async function fetchProfileData() {
-    const response = await fetch('profileData.json'); // Substitua pelo caminho correto do seu JSON
+    const response = await fetch('assets/data/profileData.json'); // Ajuste o caminho conforme necessário
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }
@@ -83,3 +82,4 @@ function updateProfessionalExperience(profileData) {
         console.error('There was a problem fetching the profile data:', error);
     }
 })();
+
